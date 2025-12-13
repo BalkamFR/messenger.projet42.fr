@@ -4,8 +4,16 @@ Extension GNOME Shell pour afficher des messages, images, GIFs et vidéos YouTub
 
 ## 🚀 Installation Rapide
 
+**Installation en une seule commande** :
+
 ```bash
-cd /home/.gemini/antigravity/scratch/messenger_fix
+git clone git@github.com:BalkamFR/messenger.projet42.fr.git && cd messenger.projet42.fr && ./install.sh
+```
+
+Ou si vous avez déjà cloné le dépôt :
+
+```bash
+cd messenger.projet42.fr
 ./install.sh
 ```
 
@@ -90,7 +98,7 @@ Déconnexion/Reconnexion
 ### Réinstaller l'extension
 
 ```bash
-cd /home/.gemini/antigravity/scratch/messenger_fix
+cd messenger.projet42.fr
 ./install.sh
 ```
 
@@ -153,7 +161,7 @@ Ce projet est fourni tel quel, sans garantie.
 
 Pour modifier l'extension :
 
-1. Éditer les fichiers dans `/home/.gemini/antigravity/scratch/messenger_fix/`
+1. Éditer les fichiers dans le dossier du projet
 2. Lancer `./install.sh` pour réinstaller
 3. Recharger GNOME Shell (si nécessaire)
 

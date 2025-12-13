@@ -3,7 +3,7 @@
 # Script d'installation de l'extension
 
 EXTENSION_DIR="$HOME/.local/share/gnome-shell/extensions/messenger.projet42.fr"
-SOURCE_DIR="$HOME/.gemini/antigravity/scratch/messenger_fix"
+SOURCE_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "=== Installation de l'extension 42 Messenger ==="
 echo ""
