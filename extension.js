@@ -2,7 +2,7 @@ const St = imports.gi.St;
 const Clutter = imports.gi.Clutter;
 const GLib = imports.gi.GLib;
 const Gio = imports.gi.Gio;
-// Soup version check
+// Force l'utilisation de Soup 3.0 si disponible
 try { imports.gi.versions.Soup = '3.0'; } catch(e) {}
 const Soup = imports.gi.Soup;
 
@@ -12,7 +12,7 @@ const ExtensionUtils = imports.misc.extensionUtils;
 const API_URL = "http://42.pacomepilaz.com/api.php";
 const POLLING_INTERVAL = 5;
 
-// Note: pas de "export default class". On assigne la classe à une variable.
+// Pas de "export default", on utilise var + init()
 var MessengerExtension = class MessengerExtension {
     constructor() {
         this._settings = null;
@@ -172,7 +172,6 @@ var MessengerExtension = class MessengerExtension {
     _displayPopup(sender, content, isImage, options) {
         if (!this._container || !this._masterContainer) return;
         
-        // Gestion YouTube
         if (!isImage) {
             let youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
             let match = content.match(youtubeRegex);
