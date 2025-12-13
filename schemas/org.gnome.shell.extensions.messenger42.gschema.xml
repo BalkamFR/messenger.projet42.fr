@@ -1,0 +1,14 @@
+<schemalist>
+  <schema id="org.gnome.shell.extensions.messenger42" path="/org/gnome/shell/extensions/messenger42/">
+    <key name="login" type="s">
+      <default>'test'</default>
+      <summary>Login</summary>
+      <description>Votre identifiant de connexion</description>
+    </key>
+    <key name="password" type="s">
+      <default>'test'</default>
+      <summary>Mot de passe</summary>
+      <description>Votre mot de passe</description>
+    </key>
+  </schema>
+</schemalist>

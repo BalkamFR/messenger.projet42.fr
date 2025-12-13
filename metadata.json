@@ -1,0 +1,18 @@
+{
+	"name": "42 Messenger Ultimate",
+	"description": "Messenger 42",
+	"uuid": "messenger.projet42.fr",
+	"shell-version": [
+		"3.36",
+		"3.38",
+		"40",
+		"41",
+		"42",
+		"43",
+		"44",
+		"45",
+		"46"
+	],
+	"version": 1,
+	"settings-schema": "org.gnome.shell.extensions.messenger42"
+}
